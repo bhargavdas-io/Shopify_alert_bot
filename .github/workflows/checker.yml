@@ -27,4 +27,4 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_SECRETS }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_ID }}
-        run: python stock_checker.py
+        run: python alert.py
