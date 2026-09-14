@@ -2,8 +2,8 @@ import os
 
 import requests
 
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_SECRETS")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_ID")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 # The .js endpoints bypass HTML and fetch direct inventory data
 PRODUCTS = [
