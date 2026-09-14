@@ -48,7 +48,7 @@ def check_stock():
                 # Find your specific variant ID in the data
                 for variant in variants:
                     if variant.get("id") == item["variant_id"]:
-                        if variant.get("available") == False:
+                        if variant.get("available") == True:
                             in_stock_items.append(f"✅ <b>{item['name']}</b> is IN STOCK!\n<a href='{item['buy_url']}'>Buy Here</a>")
                         break
         except Exception as e:
